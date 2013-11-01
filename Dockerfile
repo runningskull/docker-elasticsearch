@@ -9,6 +9,6 @@ ADD run.sh /usr/local/bin/run
 RUN chmod +x /usr/local/bin/run
 RUN rm -rf /tmp/*
 
-EXPOSE 9200
-EXPOSE 9300
+EXPOSE 9200:59200
+EXPOSE 9300:59300
 CMD ["/usr/local/bin/run"]
