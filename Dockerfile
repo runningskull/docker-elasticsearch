@@ -12,7 +12,7 @@ RUN chmod +x /usr/local/bin/run
 
 RUN rm -rf /tmp/*
 
-EXPOSE 59200:9200
-EXPOSE 59300:9300
+EXPOSE 9200:9200
+EXPOSE 9300:9300
 
 CMD ["/usr/local/bin/run"]
