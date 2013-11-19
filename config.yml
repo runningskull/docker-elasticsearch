@@ -1,0 +1,21 @@
+cluster:
+    name: checkya-es-cluster
+
+# Could also put this in default-mapping.(yml|json)
+mapping:
+    _default_:
+        properties:
+            fingerprint:
+                type: string
+                index: not_analyzed
+            cookie_id:
+                type: string
+                index: not_analyzed
+            action:
+                type: string
+                index: not_analyzed
+            ip:
+                type: ip
+                index: not_analyzed
+
+
